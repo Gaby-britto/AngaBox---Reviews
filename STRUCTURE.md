@@ -22,8 +22,39 @@
     - `./src/middlewares/validateUser.js`: Middleware para autenticação de usuários.
   
   - `./src/routes`: Diretório onde estão definidas as rotas da API.
-    - `./src/routes/router.js`: Arquivo que define as rotas da API e associa cada rota ao seu respectivo controlador.
+    - `./src/routes/admRouter.js`: Define rotas específicas para operações relacionadas a administradores.
+      -  `'/' getAll`
+      -  `'/:id' getOne` 
+      -  `'/' create` 
+      -  `'/' upate` 
+      -  `'/:id' delete` 
   
+    - `./src/routes/movieRouter.js`: Define rotas específicas para operações relacionadas aos movies.
+         -  `'/' getAll`
+      -  `'/:id' getOne` 
+      -  `'/' create` 
+      -  `'/' upate` 
+      -  `'/:id' delete` 
+  
+    - `./src/routes/postRouter.js`: Define rotas específicas para operações relacionadas aos posts.
+      -  `'/' getAll`
+      -  `'/:id' getOne` 
+      -  `'/' create`
+      -  `'/:id' delete` 
+  
+    - `./src/routes/userRouter.js`: Define rotas específicas para operações relacionadas a usuários.
+      -  `'/' getAll`
+      -  `'/:id' getOne` 
+      -  `'/' create` 
+      -  `'/' upate` 
+      -  `'/:id' delete` 
+    - `./src/routes/router.js`: Arquivo que define as rotas da API e associa cada rota ao seu respectivo controlador.
+      -  `'/user' userRoutes`
+      -  `'/post' postRouter` 
+      -  `'/movie' movieRouter` 
+      -  `'/adm' admRouter` 
+      -  `'/login'`
+      -  
  - `./src/models`: Representa as entidades do sistema e define como os dados serão manipulados.
     - `./src/models/Admin.js`: Modelo que define a estrutura de dados dos administradores.
     - `./src/models/User.js`: Modelo que define a estrutura de dados dos usuários.
